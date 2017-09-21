@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+  <body ng-app="cateliProductions">
+</head>
+    <div>
+        <p>Name: <input type="text" ng-model="name"</p>
+        <p>{{name}}</p>
+      </div>
+
+      <div><!-- Sobre-->
+        <p>Somos um estúdio apaixonado pela arte.</p>
+      </div>
+
+      <div>
+		  <p>Insira o seu email para receber um PDF com os serviços que podemos oferecer!</p>
+		  
+		  <form name="contato">
+			  <input type="email" name="myAddress" ng-model="text">
+			  <span ng-show="contato.myAddress.$error.email">Insira um e-mail válido</span>
+		  </form>
+        <ul>
+          <li>Facebook</li>
+          <li><a href="https://instagram.com/cateliproductions" target="_blank">Instagram</a></li>
+          <li>Twitter</li>
+          <li>YouTube</li>
+        </ul>
+      </div>
+      <div ng-controller="myDate">
+        <p>Cateli Productions {{date | date:'yyyy'}} - Todos os direitos reservados</p>
+      </div>
+      <!-- Contato -->
+	  <script src="modules/cateliProductions.js"></script>
+      <script src="controllers/myDate.js"></script>
+  </body>
+</html>
