@@ -2,35 +2,53 @@
 <html>
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <body ng-app="cateliProductions">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>  
 </head>
-    <div>
-        <p>Name: <input type="text" ng-model="name"</p>
-        <p>{{name}}</p>
-      </div>
+  <body ng-app="cateliProductions">
+    <div class="row center-align">
+		<h5>Cateli Productions</h5>
+	</div>
 
-      <div><!-- Sobre-->
-        <p>Somos um estúdio apaixonado pela arte.</p>
-      </div>
+	  <div class="row center-align"><!-- Sobre-->
+		<p>Somos um estúdio apaixonado pela arte.</p>
+	  </div>
 
-      <div>
+      <div class="row center-align container">
 		  <p>Insira o seu email para receber um PDF com os serviços que podemos oferecer!</p>
 		  
-		  <form name="contato">
-			  <input type="email" name="myAddress" ng-model="text">
-			  <span ng-show="contato.myAddress.$error.email">Insira um e-mail válido</span>
+		  <form name="contato" class="col s12">
+			<div class="row">
+				<div class="input-field col s12">
+				  <input id="email" type="email" name="myAddress" ng-model="text">
+				  <label for="email" data-error="wrong" data-success="right"></label>
+				</div>
+			</div>
 		  </form>
-        <ul>
-          <li>Facebook</li>
-          <li><a href="https://instagram.com/cateliproductions" target="_blank">Instagram</a></li>
-          <li>Twitter</li>
-          <li>YouTube</li>
-        </ul>
       </div>
-      <div ng-controller="myDate">
-        <p>Cateli Productions {{date | date:'yyyy'}} - Todos os direitos reservados</p>
-      </div>
-      <!-- Contato -->
+	  
+	<footer class="page-footer">
+	  <div class="container">
+		<div class="row">
+		  <div class="center-align">
+				<ul>
+				  <li>Facebook</li>
+				  <li><a href="https://instagram.com/cateliproductions" target="_blank">Instagram</a></li>
+				  <li>Twitter</li>
+				  <li>YouTube</li>
+				</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="footer-copyright" ng-controller="myDate">
+		<div class="container center-align">
+			<p>Cateli Productions {{date | date:'yyyy'}} - Todos os direitos reservados</p>
+		</div>
+	  </div>
+	</footer>	  
+	  	  
+	  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>	  
 	  <script src="modules/cateliProductions.js"></script>
       <script src="controllers/myDate.js"></script>
   </body>
