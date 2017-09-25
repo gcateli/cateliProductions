@@ -7,27 +7,35 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">    
 </head>
   <body ng-app="cateliProductions">
+  <div class="container">
     <div class="row center-align">
 		<h5>Cateli Productions</h5>
 	</div>
-
-	  <div class="row center-align"><!-- Sobre-->
+	<div class="divider"></div>
+	<div class="section row center-align"><!-- Sobre-->
 		<p>Somos um estúdio apaixonado pela arte.</p>
-	  </div>
-
-      <div class="row center-align container">
-		  <p>Insira o seu email para receber um PDF com os serviços que podemos oferecer!</p>
-		  
-		  <form name="contato" class="col s12">
-			<div class="row">
-				<div class="input-field inline">
-				  <input id="email" type="email" name="myAddress" ng-model="text">
-				  <label for="email" data-error="wrong" data-success="right"></label>
-				</div>
-			</div>
-		  </form>
-      </div>
+		<div class="video-container">
+			<iframe width="854" height="480" src="https://www.youtube.com/embed/t7b-ZXh_LVM" frameborder="0" allowfullscreen></iframe>
+		</div>		
+	</div>
+	<div class="divider"></div>
+	<div class="section row center-align">
+		<p>Fotos</p>
+		<img class="responsive-img" src="https://www.instagram.com/p/BTWewlulCV5/"/>
+	</div>
+	<div class="divider"></div>
+	<div class="section row center-align">
+	  <p>Insira o seu email para receber um PDF com os serviços que podemos oferecer!</p>
 	  
+	  <form name="contato" class="col s12">
+		<div class="row">
+			<div class="input-field inline">
+			  <input id="email" type="email" name="myAddress" ng-model="text">
+			  <label for="email" data-error="wrong" data-success="right"></label>
+			</div>
+		</div>
+	  </form>
+	</div>
 	<footer class="page-footer">
 	  <div class="container">
 		<div class="row">
@@ -52,5 +60,6 @@
       <script type="text/javascript" src="js/materialize.min.js"></script>	  
 	  <script src="modules/cateliProductions.js"></script>
       <script src="controllers/myDate.js"></script>
+  </div>
   </body>
 </html>
