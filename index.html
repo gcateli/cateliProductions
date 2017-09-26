@@ -13,18 +13,37 @@
 	</div>
 	<div class="divider"></div>
 	<div class="section row center-align"><!-- Sobre-->
-		<p>Somos um estúdio apaixonado pela arte.</p>
+		<p class="flow-text">Somos um estúdio apaixonado pela arte.</p>
+		<p class="flow-text">
+			Desde 2015, gravando suas primeiras músicas para a igreja de sua irmã, Guilherme Cateli
+			sempre teve o sonho de viver uma carreira musical, tanto nos palcos quanto nos estúdios. Suas primeiras produções
+			emplacaram mais de 1000 visualizações no YouTube, sem muita divulgação. E esse foi apenas o começo...
+		</p>
 		<div class="video-container">
 			<iframe width="854" height="480" src="https://www.youtube.com/embed/t7b-ZXh_LVM" frameborder="0" allowfullscreen></iframe>
 		</div>		
 	</div>
 	<div class="divider"></div>
 	<div class="section row center-align">
-		<p>Fotos</p>
-		<img class="responsive-img" src="https://www.instagram.com/p/BTWewlulCV5/"/>
+	<h5>Fotos</h5>
+
+	<div class="card">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator responsive-img" src="img/index/guitar.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+      <p><a href="#">This is a link</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+    </div>
+	</div>
+	
 	</div>
 	<div class="divider"></div>
-	<div class="section row center-align">
+	<div class="section row center-align flow-text">
 	  <p>Insira o seu email para receber um PDF com os serviços que podemos oferecer!</p>
 	  
 	  <form name="contato" class="col s12">
@@ -36,22 +55,18 @@
 		</div>
 	  </form>
 	</div>
-	<footer class="page-footer">
+	<footer class="page-footer light-blue lighten-3">
 	  <div class="container">
-		<div class="row">
-		  <div class="center-align">
-				<ul>
-				  <li>Facebook</li>
-				  <li><a href="https://instagram.com/cateliproductions" target="_blank">Instagram</a></li>
-				  <li>Twitter</li>
-				  <li>YouTube</li>
-				</ul>
-		  </div>
-		</div>
+				<div class="row center-align">
+				  <a href="https://facebook.com/cateliproductions" target="_blank"><img src="img/social/fb.png" class="responsive-img"/></a>
+				  <a href="https://instagram.com/cateliproductions" target="_blank"><img src="img/social/ig.png" class="responsive-img"/></a>
+					<a href="https://www.youtube.com/channel/UCnG5-kvaA94gUPoCpAnrGqw" target="_blank"><img src="img/social/yt.png" class="responsive-img"/></a>
+				  <a href="https://www.github.com/gcateli" target="_blank"><img src="img/social/git.png" class="responsive-img"/></a>					
+				</div>
 	  </div>
 	  <div class="footer-copyright" ng-controller="myDate">
-		<div class="container center-align">
-			<p>Cateli Productions {{date | date:'yyyy'}} - Todos os direitos reservados<i class="material-icons">copyright</i></p>
+			<div class="container center-align">
+				<p>Cateli Productions {{date | date:'yyyy'}} - Todos os direitos reservados<i class="material-icons">copyright</i></p>
 		</div>
 	  </div>
 	</footer>	  
